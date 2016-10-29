@@ -1,20 +1,31 @@
- <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
+
+        <ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">Italiano</a></li>
+  <li><a href="#!">Inglese</a></li>
+  <li><a href="#!">Francese</a></li>
+    <li><a href="#!">Tedesco</a></li>
+      <li><a href="#!">Albanese</a></li><br>  <li><a href="#!">Cinese</a></li><br>
+</ul>                         
+   <nav class="white" role="navigation">                
+    <div class="nav-wrapper container">                      
       <a id="logo-container" href="<?= $this->url(array(
                         'controller' => 'user',
                         'action'     => 'index'),
                         'default',true
                     ); 
-                 ?>" class="brand-logo">  <img src="<?=$this->baseUrl('images/leafgreen.png');?>" />Greenergy</a>
+                 ?>" class="brand-logo">  <img src="<?=$this->baseUrl('images/leafgreen.png');?>" />Greenergy</a>     
       <ul  data-activates="slide-out" class="button-collapse" class="right hide-on-med-and-down" style="float:right">
-       <li><a href="#">Account</a></li>
+        <li><a href="#">Account</a></li>
+        <li><a id ="btn"class="dropdown-button" href="#!" data-activates="dropdown1">Lingua<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
-                                       
+                                                                                                 
       <ul id="nav-mobile" class="side-nav">
         <li><a href="#">Account</a></li>
+                                <li><a id ="btn"class="dropdown-button" href="#!" data-activates="dropdown1">Lingua<i class="material-icons right">arrow_drop_down</i></a></li>
+
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
+    </div>                                                    
   </nav>
   
   
@@ -43,12 +54,7 @@
           </li>
         </ul>                             
         <li><div class="divider"></div></li>      
-    <li><a href="<?= $this->url(array(
-                        'controller' => 'user',
-                        'action'     => 'accsettings'),
-                        'default',true
-                    ); 
-                 ?>"><i class="material-icons">perm_identity</i>Impostazioni Account</a></li>
+    <li><a href="#!"><i class="material-icons">perm_identity</i>Impostazioni Account</a></li>
     <li><a href="<?= $this->url(array(
                         'controller' => 'user',
                         'action'     => 'searchmap'),
@@ -60,12 +66,7 @@
                  
                  
                  
-        <li><a href="<?= $this->url(array(
-                        'controller' => 'user',
-                        'action'     => 'orderhistory'),
-                        'default',true
-                    ); 
-                 ?>"><i class="material-icons">pageview</i>Cronologia Ordini</a></li>
+        <li><a href="#!"><i class="material-icons">pageview</i>Cronologia Ordini</a></li>
         
         
         
@@ -81,3 +82,15 @@
                     ); 
                  ?>">Disconnettiti</a></li>
   </ul>
+
+   
+
+
+
+<script>
+  $("#btn").click(function(ev) {
+ev.stopPropagation();
+});
+
+$('#dropdown1').click(function() {  location.reload(); return false;  });   
+</script>

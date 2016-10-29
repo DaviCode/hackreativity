@@ -1,3 +1,10 @@
+ <ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">Italiano</a></li>
+  <li><a href="#!">Inglese</a></li>
+  <li><a href="#!">Francese</a></li>
+    <li><a href="#!">Tedesco</a></li>
+      <li><a href="#!">Albanese</a></li><br>  <li><a href="#!">Cinese</a></li><br>
+</ul>  
 <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       
@@ -20,7 +27,10 @@
                         'default',true
                     ); 
                  ?>">Signup</a></li>
+                         <li><a id ="btn"class="dropdown-button" href="#!" data-activates="dropdown1">Lingua<i class="material-icons right">arrow_drop_down</i></a></li>
+
         </ul>
+        
          <ul id="nav-mobile" class="side-nav">
         <li><a href="<?= $this->url(array(
                         'controller' => 'public',
@@ -34,7 +44,16 @@
                         'default',true
                     ); 
                  ?>">Signup</a></li>
+                                          <li><a id ="btn"class="dropdown-button" href="#!" data-activates="dropdown1">Lingua<i class="material-icons right">arrow_drop_down</i></a></li>
+
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
 </nav>
+<script>
+  $("#btn").click(function(ev) {
+ev.stopPropagation();
+});
+
+$('#dropdown1').click(function() {  location.reload(); return false;  });   
+</script>
