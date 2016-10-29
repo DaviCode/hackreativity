@@ -32,6 +32,22 @@ class UserController extends Zend_Controller_Action
     {
         
     }
+    public function pannellicatAction()
+    {
+        
+    }
+    public function lowcostAction()
+    {
+        
+    }
+    public function paleAction()
+    {
+        
+    }
+    public function carrelloAction()
+    {
+        
+    }
     
 }
 
