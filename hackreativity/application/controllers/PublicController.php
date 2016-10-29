@@ -9,7 +9,7 @@ class PublicController extends Zend_Controller_Action
     public function init()
     {
 		$this->_helper->layout->setLayout('main');
-        $this->_catalogModel = new Application_Model_Catalog();
+       
         $this->_authService = new Application_Service_Auth();
         $this->view->loginForm = $this->getLoginForm();
     }
