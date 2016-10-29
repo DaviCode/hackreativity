@@ -13,7 +13,7 @@ class UserController extends Zend_Controller_Action
 
     public function logoutAction()
 	{
-		$this->_authService->clear();
+		
 		return $this->_helper->redirector('index','public');	
 	}
     

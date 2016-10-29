@@ -18,7 +18,7 @@ p {
 .button-collapse {
   color: #26a69a;
 }
-
+#textdecoration { color: #4bddc7; font-family: "Great Vibes", cursive; font-size: 74px; line-height: 160px; font-weight: normal; margin-bottom: 0px; margin-top: 40px; text-align: center; text-shadow: 0 1px 1px #fff; }
 .parallax-container {
   min-height: 380px;
   line-height: 0;
