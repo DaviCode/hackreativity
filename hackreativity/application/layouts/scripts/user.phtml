@@ -1,39 +1,20 @@
 <?php echo $this->doctype() ?>
 <html>
 <head>
-	<?= $this->headMeta(); ?>
+    <!--<?= $this->headMeta(); ?>
     <?= $this->headLink(); ?>
-    <?= $this->headTitle(); ?>
+    <?= $this->headTitle(); ?> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="<?=$this->baseUrl('css/materialize.css'); ?>" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="<?=$this->baseUrl('css/style.css'); ?>" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <?= $this->headScript(); ?>
 </head>
 <body>
-<div id="wrapper">
-	<div id="header">
-		<div id="logo">
-			<h1><a href="">ACME S.p.A  </a></h1>
-			<p>i migliori prodotti alla portata di un click</p>
-		</div>
-	</div>
-
-	<!-- end #header -->
-	<div id="menu">
-        <?= $this->render('_topnavuser.phtml') ?>
-	</div>
-
-	<!-- end #menu -->
-	<div id="page">
-  	  <div id="page-bgtop">
-    	<div id="page-bgbtm">
-	  	  <?php echo $this->layout()->content; ?>
-      	<div style="clear: both;">&nbsp;</div>
-	    </div>
-  	  </div>
-	</div>
+ <?= $this->render('_topnavuser.phtml') ?>
+    <?php echo $this->layout()->content; ?>
 
 	<!-- end #content -->
-	<div id="footer">
-		<br>
-		<p>universit&agrave; politecnica delle marche - Corso di  <a href="http://www.dii.univpm.it/C3I110NA/">tecnologie web</a>.</p>
-	</div>
+	<?= $this->render('_footer.phtml') ?>
 	<!-- end #footer -->
 </div>
 </body>

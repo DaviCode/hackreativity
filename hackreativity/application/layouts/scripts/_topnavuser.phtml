@@ -1,45 +1,35 @@
-<ul>
-	<li><a href=" <?= $this->url(array(
-                        'controller' => 'public',
-                        'action'     => 'index',
-                        ), 
-                        'default', true
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="<?= $this->url(array(
+                        'controller' => 'user',
+                        'action'     => 'index'),
+                        'default',true
                     ); 
-                 ?>"
-		title="Torna al Catalogo">Catalogo</a></li>
+                 ?>" class="brand-logo">  <img src="<?=$this->baseUrl('images/leafgreen.png');?>" />Greenergy</a>
+      <ul  data-activates="slide-out" class="button-collapse" class="right hide-on-med-and-down" style="float:right">
+       <li><a href="#">Account</a></li>
+      </ul>
+                                       
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Account</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  
+  
+  
+  
+                 <ul id="slide-out" class="side-nav">
+    <li><div class="userView">
+      <img class="background" src="<?=$this->baseUrl('images/office.jpg');?>">
+      <a href="#!user"><img class="circle" src="<?=$this->baseUrl('images/jim.jpg');?>"></a>
+      <a href="#!name"><span class="white-text name">Jenny Doe</span></a>
+      <a href="#!email"><span class="white-text email">jDoe@gmail.com</span></a>
+    </div></li>                                           
+    <li><a href="#!"><i class="material-icons">perm_identity</i>Impostazioni Account</a></li>
+        <li><a href="#!"><i class="material-icons">pageview</i>Cronologia Ordini</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect" href="#!">Disconnettiti</a></li>
+  </ul>
 
-	<li><a href=" <?= $this->url(array(
-                        'controller' => 'user',
-                        'action'     => 'index',
-                        ), 
-                        'default', true
-                    ); 
-                 ?>"
-		title="Azione1">Azione1</a></li>
-	<li><a href=" <?= $this->url(array(
-                        'controller' => 'user',
-                        'action'     => 'index',
-                        ), 
-                        'default', true
-                    ); 
-                 ?>"
-		title="Azione2">Azione2</a></li>
-	<li><a href=" <?= $this->url(array(
-                        'controller' => 'user',
-                        'action'     => 'index',
-                        ), 
-                        'default', true
-                    ); 
-                 ?>"
-		title="Azione3">Azione3</a></li>
-	<li><a
-		href="
-                <?= $this->url(array(
-                        'controller' => 'user',
-                        'action'     => 'logout',
-                         ), 
-                        'default', true
-                    ); 
-                 ?>"
-		title="Esci dall'Area Amministratore">Logout</a></li>
-</ul>
