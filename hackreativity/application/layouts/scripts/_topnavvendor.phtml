@@ -9,7 +9,7 @@
    <nav class="white" role="navigation">                
     <div class="nav-wrapper container">                      
       <a id="logo-container" href="<?= $this->url(array(
-                        'controller' => 'user',
+                        'controller' => 'vendor',
                         'action'     => 'index'),
                         'default',true
                     ); 
@@ -39,54 +39,26 @@
     </div></li>        
     
         
-        <ul class="collapsible collapsible-accordion">
-          <li>
-           <a class="collapsible-header">Catalogo</center></a> 
-            <div class="collapsible-body">
-              <ul>
-                <li><a href="<?= $this->url(array(
-                        'controller' => 'user',
-                        'action'     => 'pannellicat'),
-                        'default',true
-                    ); 
-                     
-                 ?>"><i class="material-icons">loyalty</i>Pannelli</a></li>
-                <li><a href="<?= $this->url(array(
-                        'controller' => 'user',
-                        'action'     => 'pale'),
-                        'default',true
-                    ); 
-                 ?>"><i class="material-icons">loyalty</i>Impianti Eolici</a></li>
-                <li><a href="<?= $this->url(array(
-                        'controller' => 'user',
-                        'action'     => 'lowcost'),
-                        'default',true
-                    ); 
-                 ?>"><i class="material-icons">loyalty</i>Elettronica low cost</a></li>
-                <li><a href="#!"><i class="material-icons">loyalty</i>Impianti Idroelettrici</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>                             
-        <li><div class="divider"></div></li>      
-    <li><a href="#!"><i class="material-icons">perm_identity</i>Impostazioni Account</a></li>
+        
     <li><a href="<?= $this->url(array(
-                        'controller' => 'user',
-                        'action'     => 'searchmap'),
+                        'controller' => 'vendor',
+                        'action'     => 'accountsettings'),
                         'default',true
                     ); 
-                 ?>"><i class="material-icons">settings</i>Cerca un Tecnico vicino a te</a>
+                 ?>"><i class="material-icons">perm_identity</i>Impostazioni Account</a></li>
+    
       
                  
                  
                  
-           <li><a href="<?= $this->url(array(
+           
+            <li><a href="<?= $this->url(array(
                         'controller' => 'user',
-                        'action'     => 'carrello'),
+                        'action'     => 'rimuoviprodotto'),
                         'default',true
                     ); 
-                 ?>"><i class="material-icons">loyalty</i>Carrello</a></li>      
-        <li><a href="#!"><i class="material-icons">pageview</i>Cronologia Ordini</a></li>
+                 ?>"><i class="material-icons">replay</i>Rimuovi Prodotto</a></li>     
+      
         
         
         

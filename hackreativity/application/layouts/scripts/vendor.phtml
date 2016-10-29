@@ -1,15 +1,15 @@
 <?php echo $this->doctype() ?>
 <html>
 <head>
-	<?= $this->headMeta(); ?>
-    <?= $this->headLink(); ?>
-    <?= $this->headTitle(); ?>
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="<?=$this->baseUrl('css/materialize.css'); ?>" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="<?=$this->baseUrl('css/style.css'); ?>" type="text/css" rel="stylesheet" media="screen,projection"/>
     <?= $this->headScript(); ?>
 </head>
 <body id="bodyadmin">
 <div id="wrapper">
 	<div id="menu">
-        <?= $this->render('_topnavadmin.phtml') ?>
+        <?= $this->render('_topnavvendor.phtml') ?>
 	</div>
 
 	<!-- end #menu -->
@@ -23,10 +23,7 @@
 	</div>
 
 	<!-- end #content -->
-	<div id="footer">
-		<br>
-		<p>universit&agrave; politecnica delle marche - Corso di  <a href="http://www.dii.univpm.it/C3I110NA/">tecnologie web</a>.</p>
-	</div>
+	<?= $this->render('_footer.phtml') ?>
 	<!-- end #footer -->
 </div>
 </body>

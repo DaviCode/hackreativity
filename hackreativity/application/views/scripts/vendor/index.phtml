@@ -1,0 +1,32 @@
+  <?php $this->headScript()
+    ->appendFile('https://code.jquery.com/jquery-2.1.1.min.js')
+    ->appendFile($this->baseUrl('js/materialize.js'))
+    ->appendFile($this->baseUrl('js/init.js'));
+  ?>
+  <h1 class="header center teal-text text-lighten-2">Vendi</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Inizia subito a vendere!</h5>
+        </div>
+        <div class="row center">
+          <a href="<?= $this->url(array(
+                        'controller' => 'vendor',
+                        'action'     => 'newproduct'),
+                        'default',true
+                    ); 
+                 ?>" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Vendi Ora</a>
+        </div>
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        
+        
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="images/Pannelli-Solari.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+ 

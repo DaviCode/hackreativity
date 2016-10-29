@@ -69,6 +69,10 @@ class PublicController extends Zend_Controller_Action
 			'default'
 		));
 		return $this->_form;
-    }   	
+    }   
+    public function vendorloginAction()
+    {
+        
+    }	
 }
 

@@ -1,0 +1,53 @@
+  <?php $this->headScript()
+    ->appendFile('https://code.jquery.com/jquery-2.1.1.min.js')
+    ->appendFile($this->baseUrl('js/materialize.js'))
+    ->appendFile($this->baseUrl('js/init.js'));
+  ?>
+  <div>
+  <div class="row" style="width:70vh; margin-top: 5%;"
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+          <label for="first_name">Nome Prodotto</label>
+        </div>
+        
+      </div>
+      <div class="row">
+          <div class="row">
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1"> Descrivi il tuo prodotto</label>
+        </div>
+      </div>
+  </div>
+      </div>
+      <div class="file-field input-field">
+      <div class="btn">
+        <span>File</span>
+        <input type="file" multiple>
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text" placeholder="Carica un'immagine per il tuo prodotto">
+      </div>
+    </div>
+      <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Salva Inserzione</a>
+        </div>
+    </form>
+  </div>
+<div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <div class="row center">
+        </div>
+        
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="<?=$this->baseUrl('images/eolica.jpg'); ?>" alt="Unsplashed background img 1" style="display: block; transform: translate3d(-50%, 1059px, 0px);"></div>
+  </div>
+</div>
