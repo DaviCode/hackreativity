@@ -1,23 +1,47 @@
-<?php $this->headScript()
-	->appendFile('https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
-	->appendFile($this->baseUrl('js/functions.js'))
-	->captureStart() ?>
+  <?php $this->headScript()
+    ->appendFile('https://code.jquery.com/jquery-2.1.1.min.js')
+    ->appendFile($this->baseUrl('js/materialize.js'))
+    ->appendFile($this->baseUrl('js/init.js'));
+  ?>
+  <div>
+  <div class="row" style="width:100vh; margin-top: 5%;"
+    <form class="col s12">
+    
+       <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="text" class="validate">
+          <label for="password">E-mail</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
+      
+        
+      <div class="row center">
+          <a href="<?= $this->url(array(
+                        'controller' => 'user',
+                        'action'     => 'index'),
+                        'default',true
+                    ); 
+                 ?>" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Login</a>
+        </div>
+    </form>
+  </div>
+<div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <div class="row center">
+        </div>
+        
+        <br><br>
 
-// codice jQuery inserito da view-script nella sezione head della pagina
-$(function()
-{
-	var actionUrl='<?= $this->url(array('controller' => 'public', 'action' => 'validatelogin',), 'default'); ?>';
-	var formName='<?= $this->loginForm->getName() ?>';
-	$(":input").on('blur', function(event) {
-    var formElementId = $(this).attr('id');
-    doValidation(formElementId, actionUrl, formName);
-    });
-});
-
-<?php $this->headScript()->captureEnd() ?>
-
-<div class="static">
- <h3>login</h3>
- <p>Utilizza questa form per l'autenticazione</p>
- <?=$this->loginForm; ?>
+      </div>
+    </div>
+    <div class="parallax"><img src="<?=$this->baseUrl('images/eolica.jpg'); ?>" alt="Unsplashed background img 1" style="display: block; transform: translate3d(-50%, 1059px, 0px);"></div>
+  </div>
 </div>

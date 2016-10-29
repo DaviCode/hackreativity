@@ -1,7 +1,12 @@
 <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       
-           <a id="logo-container" href="#" class="brand-logo">  <img src="images/leafgreen.png" />Greenergy</a>
+           <a id="logo-container" href="<?= $this->url(array(
+                        'controller' => 'public',
+                        'action'     => 'index'),
+                        'default',true
+                    ); 
+                 ?>" class="brand-logo">  <img src="<?=$this->baseUrl('images/leafgreen.png');?>" />Greenergy</a>
         <ul class="right hide-on-med-and-down">
             <li><a href="<?= $this->url(array(
                         'controller' => 'public',
@@ -9,6 +14,12 @@
                         'default',true
                     ); 
                  ?>">Login</a></li>
+                 <li><a href="<?= $this->url(array(
+                        'controller' => 'public',
+                        'action'     => 'signup'),
+                        'default',true
+                    ); 
+                 ?>">Signup</a></li>
         </ul>
          <ul id="nav-mobile" class="side-nav">
         <li><a href="<?= $this->url(array(
@@ -17,6 +28,12 @@
                         'default',true
                     ); 
                  ?>">Login</a></li>
+                 <li><a href="<?= $this->url(array(
+                        'controller' => 'public',
+                        'action'     => 'signup'),
+                        'default',true
+                    ); 
+                 ?>">Signup</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
