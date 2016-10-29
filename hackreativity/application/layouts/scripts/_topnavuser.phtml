@@ -1,4 +1,4 @@
-  <nav class="white" role="navigation">
+ <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="<?= $this->url(array(
                         'controller' => 'user',
@@ -20,15 +20,59 @@
   
   
   
-                 <ul id="slide-out" class="side-nav">
+                 <ul id="slide-out" class="side-nav" >
     <li><div class="userView">
       <img class="background" src="<?=$this->baseUrl('images/office.jpg');?>">
       <a href="#!user"><img class="circle" src="<?=$this->baseUrl('images/jim.jpg');?>"></a>
       <a href="#!name"><span class="white-text name">Jenny Doe</span></a>
       <a href="#!email"><span class="white-text email">jDoe@gmail.com</span></a>
-    </div></li>                                           
-    <li><a href="#!"><i class="material-icons">perm_identity</i>Impostazioni Account</a></li>
-        <li><a href="#!"><i class="material-icons">pageview</i>Cronologia Ordini</a></li>
+    </div></li>        
+    
+        
+        <ul class="collapsible collapsible-accordion">
+          <li>
+           <a class="collapsible-header">Catalogo</center></a> 
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!"><i class="material-icons">loyalty</i>Pannelli</a></li>
+                <li><a href="#!"><i class="material-icons">loyalty</i>Impianti Eolici</a></li>
+                <li><a href="#!"><i class="material-icons">loyalty</i>Elettronica low cost</a></li>
+                <li><a href="#!"><i class="material-icons">loyalty</i>Impianti Idroelettrici</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>                             
+        <li><div class="divider"></div></li>      
+    <li><a href="<?= $this->url(array(
+                        'controller' => 'user',
+                        'action'     => 'accsettings'),
+                        'default',true
+                    ); 
+                 ?>"><i class="material-icons">perm_identity</i>Impostazioni Account</a></li>
+    <li><a href="<?= $this->url(array(
+                        'controller' => 'user',
+                        'action'     => 'searchmap'),
+                        'default',true
+                    ); 
+                 ?>"><i class="material-icons">settings</i>Cerca un Tecnico vicino a te</a>
+      
+                 
+                 
+                 
+                 
+        <li><a href="<?= $this->url(array(
+                        'controller' => 'user',
+                        'action'     => 'orderhistory'),
+                        'default',true
+                    ); 
+                 ?>"><i class="material-icons">pageview</i>Cronologia Ordini</a></li>
+        
+        
+        
+       
+ 
+        
+        
     <li><div class="divider"></div></li>
     <li><a class="waves-effect" href="<?= $this->url(array(
                         'controller' => 'user',
@@ -37,4 +81,3 @@
                     ); 
                  ?>">Disconnettiti</a></li>
   </ul>
-

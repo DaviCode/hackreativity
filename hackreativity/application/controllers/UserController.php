@@ -16,6 +16,22 @@ class UserController extends Zend_Controller_Action
 		
 		return $this->_helper->redirector('index','public');	
 	}
+    public function eectAction()
+    {
+        
+    }
+    public function searchmapAction()
+    {
+        
+    }
+    public function accsettingsAction()
+    {
+        
+    }
+    public function orderhistoryAction()
+    {
+        
+    }
     
 }
 

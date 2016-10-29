@@ -3,24 +3,47 @@
     ->appendFile($this->baseUrl('js/materialize.js'))
     ->appendFile($this->baseUrl('js/init.js'));
   ?>
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 id="textdecoration" >Fotovoltaico.</h1>
-        <div class="row center">
-          <h5 class="header col s12 light"><font color="4bddc7">Greenergy ti permette di acquistare l'apparato di energia rinnovabile più adatto a te </font></h5>
+    <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="<?=$this->baseUrl('images/slide1.jpg');?>"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Benvenuto su Greenergy</h3>
+          <h5 class="light grey-text text-lighten-3">Il portale della salvaguardia ambientale e personale</h5>
         </div>
-        <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+      </li>
+      <li>
+        <img src="<?=$this->baseUrl('images/slide2.jpg');?>"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Dal'idroelettrico</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
         </div>
-        <br><br>
-
-      </div>
-    </div>
-    <div class="parallax"><img src="images/Pannelli-Solari.jpg" alt="Unsplashed background img 1"></div>
+      </li>
+      <li>
+        <img src="<?=$this->baseUrl('images/slide3.jpg');?>"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Ai pannelli solari ed al campo eolico</h3>
+          <h5 class="light grey-text text-lighten-3">Un settore sempre più in ampliamento.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="<?=$this->baseUrl('images/slide4.jpg');?>"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Cosa aspetti?</h3>
+          <h5 class="light grey-text text-lighten-3">Aiutaci a Salvare il Pianeta!</h5>
+          <div class="row center">
+          <a href="<?= $this->url(array(
+                        'controller' => 'public',
+                        'action'     => 'signup'),
+                        'default',true
+                    ); 
+                 ?>" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Registrati</a>
+        </div>
+        </div>
+      </li>
+    </ul>
   </div>
-
+  
 
   <div class="container">
     <div class="section">
@@ -40,9 +63,9 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">Scelta del Pannello più adatto a te</h5>
+            <h5 class="center">Scelta del Prodotto più adatto a te</h5>
 
-            <p class="light">Dopo aver valutato l'efficienza energetica di casa tua potrai visualizzare i tuoi consumi e ti proporremo un pannello che soddisfi le tue esigenze.</p>
+            <p class="light">Dopo aver valutato l'efficienza energetica di casa tua potrai visualizzare i tuoi consumi e ti proporremo un prodotto che soddisfi le tue esigenze.</p>
           </div>
         </div>
         
@@ -53,7 +76,7 @@
             <h2 class="center brown-text"><i class="material-icons">language</i></h2>
             <h5 class="center">Manutenzione e Realizzazione Impianti eolici e Centrali Idroelettriche</h5>
 
-            <p class="light">ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
+            <p class="light"></p>
           </div>
         </div>
       </div>
@@ -70,7 +93,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="images/idro.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="<?=$this->baseUrl('images/1.jpg');?>" alt="Unsplashed background img 2"></div>
   </div>
 
   <div class="container">
