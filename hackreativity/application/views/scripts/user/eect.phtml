@@ -3,3 +3,181 @@
     ->appendFile($this->baseUrl('js/materialize.js'))
     ->appendFile($this->baseUrl('js/init.js'));
   ?>
+  
+
+
+
+
+
+
+       <style>
+       
+           .stylecolor {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+
+  color: black;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  text-shadow: 0 1px 0 rgb(204,204,204) , 0 2px 0 rgb(201,201,201) , 0 3px 0 rgb(187,187,187) , 0 4px 0 rgb(185,185,185) , 0 5px 0 rgb(170,170,170) , 0 6px 1px rgba(0,0,0,0.0980392) , 0 0 5px rgba(0,0,0,0.0980392) , 0 1px 3px rgba(0,0,0,0.298039) , 0 3px 5px rgba(0,0,0,0.2) , 0 5px 10px rgba(0,0,0,0.247059) , 0 10px 10px rgba(0,0,0,0.2) , 0 20px 20px rgba(0,0,0,0.14902) ;
+  -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+               
+   
+  
+
+       </style>
+       
+       
+       
+       
+       
+       
+       <div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s3"><a href="#test1">Elettrodomestici</a></li>
+        <li class="tab col s3"><a href="#test2">Lampadine</a></li>
+        <li class="tab col s3"><a href="#test3">PC</a></li>
+      </ul>
+    </div>
+    <center><div id="test1" class="col s12"><h4 class="stylecolor">Aggiungi Nuovo Elettrodomestico</h4><br><a id="add_btn1" class="btn-floating waves-effect waves-light black" style=" width:35px; height:35px;" ><i class="material-icons">add</i></a>   
+         <a href="<?= $this->url(array(
+                        'controller' => 'user',
+                        'action'     => 'result'),
+                        'default',true
+                    ); 
+                 ?>" id="add_btn" class="btn-floating waves-effect waves-light green" style=" width:35px; height:35px;" ><i class="material-icons">done</i></a>  
+      <hr>
+
+                                               
+    <div class="row"id="elettrodomestici" >
+  
+        <div class="input-field col s6"><select class="icons" >
+        <option value="" disabled selected>Scegli un elettrodomestico</option>
+        <option value="" data-icon="../images/forno.jpg" class="left circle">Forno</option> 
+        <option value="" data-icon="../images/phon.jpg" class="left circle">Fono</option>
+         <option value="" data-icon="../images/frigo.jpg" class="left circle">Frigorifero</option>
+        <option value="" data-icon="../images/stufa.jpg" class="left circle">Stufetta Elettrica</option></select> </div>    
+        <div class="input-field col s6">
+        <input type="text" placeholder="Consumo in Watt" style="width:30%"/> </div>
+
+
+         </div>       
+         
+ 
+  </div></center>
+ 
+     <center><div id="test2" class="col s12"><h4 class="stylecolor">Aggiungi Nuova Lampadina<br></h4><a id="add_btn2" class="btn-floating waves-effect waves-light blue" style=" width:35px; height:35px;" ><i class="material-icons">add</i> </a>   
+     <a href="<?= $this->url(array(
+                        'controller' => 'user',
+                        'action'     => 'result'),
+                        'default',true
+                    ); 
+                 ?>" id="add_btn" class="btn-floating waves-effect waves-light green" style=" width:35px; height:35px;" ><i class="material-icons">done</i></a> 
+    <hr>
+          <div id="lampadine">
+          <div class="input-field col s6"><select class="icons" >
+        <option value="" disabled selected>Scegli una lampadina</option>
+        <option value="" data-icon="../images/neon.jpg" class="left circle">Neon</option> 
+        <option value="" data-icon="../images/led.jpg" class="left circle">Led</option>
+         <option value="" data-icon="../images/xeno.jpg" class="left circle">Xeno</option>   </select> </div>  
+        <div class="input-field col s6">
+        <input type="text" placeholder="Consumo in Watt" style="width:30%"/> </div>
+
+          
+          
+       </div>  
+  </div></center>
+ 
+    <center > <div id="test3" class="col s12"><h4 class="stylecolor">Aggiungi Nuovo Laptop/PC/Computer</h4><br><a id="add_btn3" class="btn-floating waves-effect waves-light red" style=" width:35px; height:35px;" ><i class="material-icons">add</i></a>   
+      <a href="<?= $this->url(array(
+                        'controller' => 'user',
+                        'action'     => 'result'),
+                        'default',true
+                    ); 
+                 ?>"id="add_btn" class="btn-floating waves-effect waves-light green" style=" width:35px; height:35px;" ><i class="material-icons">done</i></a> 
+     <hr>
+          <div class="row"id="pcs" >
+  
+        <div class="input-field col s6"><select class="icons" >
+        <option value="" disabled selected>Aggiungi PC</option>
+        <option value="" data-icon="../images/portatile.jpg" class="left circle">Portatile</option> 
+        <option value="" data-icon="../images/fisso.jpg" class="left circle">Fisso</option>
+         <option value="" data-icon="../images/mini.jpg" class="left circle">Mini</option>
+       </select> </div>    
+        <div class="input-field col s6">
+        <input type="text" placeholder="Consumo in Watt" style="width:30%"/> </div>
+
+
+         </div>  
+  </div></center>
+  
+            
+            
+            
+            
+            
+            
+            
+                
+            
+            
+     
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+  
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="<?=$this->baseUrl('js/materialize.js');?>"></script>
+  <script src="<?=$this->baseUrl('js/init.js');?>"></script>
+  
+  
+  <script>
+
+$(document).ready(function() {
+        $("select").material_select();
+    $("#add_btn1").click(function(){
+     var $input = $('<div class="input-field col s6"><select class="icons" ><option value="" disabled selected>Scegli un elettrodomestico</option><option value="" data-icon="../images/forno.jpg" class="left circle">Forno</option> <option value="" data-icon="../images/phon.jpg" class="left circle">Fono</option><option value="" data-icon="../images/frigo.jpg" class="left circle">Frigorifero</option><option value="" data-icon="../images/stufa.jpg" class="left circle">Stufetta Elettrica</option></select>  </div>    <div class="input-field col s6"><input  type="text" placeholder="Consumo in Watt" style="width:30%"/> </div>');                        
+    $input.appendTo($("#test1"));  
+        $("select").material_select();
+    }); 
+    
+    
+           $("#add_btn2").click(function(){
+     var $input = $('  <div class="input-field col s6"><select class="icons" ><option value="" disabled selected>Scegli un elettrodomestico</option><option value="" data-icon="../images/neon.jpg" class="left circle">Neon</option> <option value="" data-icon="../images/led.jpg" class="left circle">Led</option><option value="" data-icon="../images/xeno.jpg" class="left circle">Xeno</option></select> </div>  <div class="input-field col s6"><input type="text" placeholder="Consumo in Watt" style="width:30%"/> </div>');                        
+    $input.appendTo($("#test2"));  
+        $("select").material_select();
+    }); 
+    
+
+
+
+           $("#add_btn3").click(function(){
+     var $input = $(' <div class="input-field col s6"><select class="icons" ><option value="" disabled selected>Aggiungi PC</option><option value="" data-icon="../images/portatile.jpg" class="left circle">Portatile</option> <option value="" data-icon="../images/fisso.jpg" class="left circle">Fisso</option><option value="" data-icon="../images/mini.jpg" class="left circle">Mini</option></select> </div>    <div class="input-field col s6"><input type="text" placeholder="Consumo in Watt" style="width:30%"/> </div>');
+      $input.appendTo($("#test3"));  
+        $("select").material_select();
+    }); 
+    
+});  
+
+  
+ </script>           
+  
+  

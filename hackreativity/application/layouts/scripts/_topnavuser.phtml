@@ -69,7 +69,13 @@
           </li>
         </ul>                             
         <li><div class="divider"></div></li>      
-    <li><a href="#!"><i class="material-icons">perm_identity</i>Impostazioni Account</a></li>
+    <li><a href="<?= $this->url(array(
+                        'controller' => 'user',
+                        'action'     => 'accountsettings'),
+                        'default',true
+                    ); 
+                 ?>"><i class="material-icons">perm_identity</i>Impostazioni Account</a></li>
+    
     <li><a href="<?= $this->url(array(
                         'controller' => 'user',
                         'action'     => 'searchmap'),
@@ -86,7 +92,12 @@
                         'default',true
                     ); 
                  ?>"><i class="material-icons">loyalty</i>Carrello</a></li>      
-        <li><a href="#!"><i class="material-icons">pageview</i>Cronologia Ordini</a></li>
+        <li><a href="<?= $this->url(array(
+                        'controller' => 'user',
+                        'action'     => 'orderhistory'),
+                        'default',true
+                    ); 
+                 ?>"><i class="material-icons">pageview</i>Cronologia Ordini</a></li>
         
         
         
