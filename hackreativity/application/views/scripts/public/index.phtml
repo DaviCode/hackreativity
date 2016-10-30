@@ -74,7 +74,13 @@
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">language</i></h2>
             <h5 class="center">Manutenzione e Realizzazione Impianti eolici e Centrali Idroelettriche</h5>
-
+<div class="row center">
+          <a href="<?= $this->url(array(
+                        'controller' => 'public',
+                        'action'     => 'idro'),
+                        'default',true
+                    ); 
+                 ?>" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Info</a>
             <p class="light"></p>
           </div>
         </div>
@@ -96,7 +102,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="<?=$this->baseUrl('images/1.jpg');?>" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="<?=$this->baseUrl('images/risparmio.jpg');?>" alt="Unsplashed background img 2"></div>
   </div>
 
   <div class="container">
